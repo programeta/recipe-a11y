@@ -11,6 +11,8 @@
         }
     ],
     "require": {
-        "drupal/username_enumeration_prevention": "*"
+        "drupal/admin_toolbar": "*",
+        "drupal/username_enumeration_prevention": "*",
+        "drupal/password_policy": "*"
     }
 }
