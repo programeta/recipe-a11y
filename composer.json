@@ -1,7 +1,11 @@
 {
     "name": "programeta/recipe-test",
     "description": "Installs and configures common security modules.",
-    "keywords": ["recipe", "Drupal recipes", "drupal recipe"],
+    "keywords": [
+        "recipe",
+        "Drupal recipes",
+        "drupal recipe"
+    ],
     "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -11,8 +15,6 @@
         }
     ],
     "require": {
-        "drupal/admin_toolbar": "*",
-        "drupal/username_enumeration_prevention": "*",
-        "drupal/password_policy": "*"
+        "drupal/title_a11y": "*"
     }
 }
