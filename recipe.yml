@@ -1,7 +1,31 @@
 name: 'Accesibility'
 description: 'Installs and configures common accesibility modules.'
-type: 'recipe'
+type: site
 
 install:
   # Install primary module.
   - title_a11y
+  - editoria11y
+  - menu_link_attributes
+  - block_aria_landmark_roles
+  - linkit
+
+actions:
+  - type: config_import
+    config_name: filter.format.basic_html
+    data:
+      format: basic_html
+      filters:
+        linkit_url_converter:
+          status: true
+          settings:
+            profile: default
+  - type: config_import
+    config_name: filter.format.full_html
+    data:
+      format: full_html
+      filters:
+        linkit_url_converter:
+          status: true
+          settings:
+            profile: default

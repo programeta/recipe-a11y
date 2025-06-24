@@ -1,6 +1,13 @@
 {
     "name": "programeta/recipe-a11y",
     "description": "Installs and configures common security modules.",
+    "x-documentation": [
+        "This modules are basics, don't have any external dependency"
+    ],
+    "x-other-modules": [
+        "drupal/auto_alter -> Works OK, third party dependency, too long texts.",
+        "drupal/ckeditor_a11ychecker -> Not ready for D11."
+    ],
     "keywords": [
         "recipe",
         "Drupal recipes",
@@ -15,6 +22,10 @@
         }
     ],
     "require": {
-        "drupal/title_a11y": "*"
+        "drupal/title_a11y": "^1.0",
+        "drupal/editoria11y": "^2.2",
+        "drupal/menu_link_attributes": "^1.5",
+        "drupal/block_aria_landmark_roles": "^3.0",
+        "drupal/linkit": "^7.0"
     }
 }
