@@ -8,6 +8,6 @@ The recipe includes baseline configuration for the following modules, which are 
 * **[Linkit](https://drupal.org/project/linkit)** – Provides an intuitive interface for linking to internal content, improving usability and editorial efficiency.
 * **[Menu Link Attributes](https://drupal.org/project/menu_link_attributes)** – Allows editors to add `aria` and other HTML attributes to menu links for improved accessibility.
 * **[Editoria11y](https://drupal.org/project/editoria11y)** – A real-time accessibility checker that assists editors in identifying and resolving accessibility issues as they write.
+* **[Landmark Roles](https://drupal.org/project/block_aria_landmark_roles)** - Adds additional elements to the block configuration forms that allow users to assign a ARIA landmark role and/or ARIA labels to a block.
 
 This recipe ensures that these modules are properly integrated into the editor environment (`full_html` or `basic_html`), enabling a consistent and accessible content creation workflow out of the box.
-
