@@ -1,6 +1,6 @@
 name: 'Accesibility'
 description: 'Installs and configures common accesibility modules.'
-type: site
+type: recipe
 
 install:
   # Install primary module.
@@ -10,22 +10,30 @@ install:
   - block_aria_landmark_roles
   - linkit
 
-actions:
-  - type: config_import
-    config_name: filter.format.basic_html
-    data:
-      format: basic_html
-      filters:
-        linkit_url_converter:
+config:
+  strict: false
+  import:
+    linkit: '*'
+  actions:
+    filter.format.basic_html:
+      setFilterConfig:
+        instance_id: linkit
+        configuration:
+          id: linkit
           status: true
+          provider: linkit
+          weight: 0
           settings:
+            title: true
             profile: default
-  - type: config_import
-    config_name: filter.format.full_html
-    data:
-      format: full_html
-      filters:
-        linkit_url_converter:
+    filter.format.full_html:
+      setFilterConfig:
+        instance_id: linkit
+        configuration:
+          id: linkit
           status: true
+          provider: linkit
+          weight: 0
           settings:
+            title: true
             profile: default
